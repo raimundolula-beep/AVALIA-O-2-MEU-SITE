@@ -1,0 +1,103 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Site</title>
+  <style>
+    /* Reset simples */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family: Arial, Helvetica, sans-serif;background:#f1f1f1;color:#222}
+
+    /* Container central similar à imagem */
+    .wrap{max-width:760px;margin:18px auto;background:transparent}
+
+    /* Cabeçalho laranja */
+    header.site-header{background:#ffa500;padding:36px 20px;text-align:center;border-radius:6px 6px 0 0}
+    header.site-header h1{color:#fff;font-size:28px;margin-bottom:6px}
+    header.site-header p{color:#fff;opacity:.95;margin:0}
+
+    /* Navegação preta com abas */
+    nav.topnav{background:#2b2b2b;padding:8px 12px;color:#fff;border-radius:0 0 3px 3px}
+    nav.topnav ul{list-style:none;display:flex;gap:12px}
+    nav.topnav a{color:#ddd;text-decoration:none;padding:6px 10px;display:block;border-radius:3px}
+    nav.topnav a:hover{background:rgba(255,255,255,0.04);color:#fff}
+
+    /* Layout: coluna esquerda (sidebar) + conteúdo principal */
+    .main{display:flex;margin-top:12px;gap:18px}
+    aside.sidebar{width:180px}
+
+    /* Blocos na sidebar */
+    .box{background:#fff;border-radius:8px;padding:14px;margin-bottom:12px;box-shadow:0 1px 0 rgba(0,0,0,0.06)}
+    .box h3{font-size:16px;margin-bottom:8px}
+    .avatar{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+    .avatar .photo{width:120px;height:120px;background:#ddd;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#888}
+    .placeholder{background:#e3e3e3;border-radius:6px;padding:18px;text-align:center;color:#888;margin-bottom:8px}
+
+    /* Conteúdo principal */
+    .content{flex:1}
+    .post{background:#fff;border-radius:12px;padding:14px;box-shadow:0 2px 6px rgba(0,0,0,0.08);border:1px solid rgba(0,0,0,0.04)}
+    .post .title{font-weight:700;padding:6px 2px;font-size:18px}
+    .meta{color:#777;font-size:13px;margin-bottom:10px}
+    .post img.feature{width:100%;height:170px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+    .post p{color:#555;line-height:1.4}
+
+    /* Pequenas responsividades */
+    @media (max-width:700px){.wrap{padding:0 10px}.main{flex-direction:column}.sidebar{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <h1>Meu Site</h1>
+      <p>Meu proprio site sobre mim!</p>
+    </header>
+
+    <nav class="topnav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Pagina 2</a></li>
+        <li><a href="#">Pagina 3</a></li>
+        <li><a href="#">Pagina 4</a></li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <aside class="sidebar">
+        <div class="box">
+          <h3>Sobre Mim</h3>
+          <div class="avatar">
+            <img src="07dd443b-3430-44cf-8e5a-696159afa60e.jpeg" class="photo">
+            <img src="IMG_20251209_201845_147.Webp" style="width:100%;border-radius:6px">
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Tenho 17 anos e estou fazendo esse site para não reprovar no curso do desenvolvimento de sistema</h3>
+          <p style="font-size:13px;color:#555;opacity:.9">Minha Galeria</p>
+          <img src="21f4987e-4133-4299-b6ea-a2506c2565bb (1).jpeg" style="width:100%;border-radius:6px">        
+          <img src="718a0a01-ba49-4bf0-a3dc-f90a1b0b8f1e.jpeg" style="width:100%;border-radius:6px">
+          <img src="832ebaa8-5595-48ad-930c-d7b06f74f1f4 (1).jpeg" style="width:100%;border-radius:6px">
+        </div>
+      </aside>
+
+      <section class="content">
+        <article class="post">
+          <div class="title">TITULO DA POSTAGEM</div>
+          <div class="meta">Gabriel 1c, 12 Dezembro, 2025</div>
+          <!-- Substitua '050506ae-78ca-4616-b70b-52593e5e7c8c.jpg' pela imagem que quiser no repositório -->
+                     <img class="feature" src="ab48e73e-685d-4a20-b44c-422348c7e0f9.jpeg" alt="Imagem da postagem">
+          <p>Meu nome e gabriel, tenho medo de ser clt no futuro e estou tentando criar esse site para passar de ano por que se não vou reprovar e como eu não quero reprovar estou fazendo esse site.</p>
+        </article>
+      </section>
+    </div>
+  </div>
+
+  <!-- Instruções rápidas para enviar ao GitHub:
+       1) Crie um repositório no GitHub
+       2) Adicione este arquivo como index.html e faça commit
+       3) Faça upload da sua imagem com o nome 'fortnite.jpg' ou altere o src
+       4) Para usar GitHub Pages: nas configurações do repo ative Pages apontando para branch main e root
+  -->
+</body>
+</html>
